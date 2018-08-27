@@ -26,3 +26,12 @@ https://github.com/direnv/direnv/releases
 	cd $GOPATH/src/github.com/cloudfoundry/bosh-cli
 	./bin/build
 	cd out; ./bosh --version
+
+## install new bosh
+
+	git clone https://github.com/marcus-sds/bosh-cli.git
+	cd bosh-cli
+	tar xfz bosh-latest.tar.gz
+	sudo mv bosh /usr/local/bin/
+	bosh --version
+	
